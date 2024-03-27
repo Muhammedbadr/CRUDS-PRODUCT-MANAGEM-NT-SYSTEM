@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 250, 236);
+    font-family:system-ui ; 
+}
+.card{
+    width: 80%;
+    margin: auto;
+}
+
+.header{
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+input{
+    width:100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid rgb(255, 194, 80);
+    margin : 4px 0 ;
+    border-radius: 4px;
+    padding: 3px  10px;
+    font-size: 15px;
+}#Search{
+    border: 1.4px solid rgb(255, 194, 80);
+
+}
+
+input:focus{
+    background-color:  rgb(255, 232, 189);
+    
+}
+.price input{
+    width: 15%;
+}
+#totl{
+    background-color: red;
+    padding: 19px 5px;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+#totl::before{
+    content: "Totol: ";
+}
+#totl::after{
+        content: "$";
+    }
+button{
+    width: 102%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(254, 173, 23);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor:pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background-color:rgb(251, 197, 97);
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+}
+#update , #delet{
+    letter-spacing: 0px;
+    font-size: small;
+    height: 30px;
+    margin: 10px 0;
+    
+}
+#update{
+    background-color: #28a745;
+}
+#delet{
+    background-color: #dc3545;
+}
+
+.btnSearch{
+    display: flex;
+    justify-content:space-between;
+    width: 102%;
+    margin-top: 10px ;
+    margin-bottom: -15px ;
+}
+.btnSearch button{
+    width: 45%;
+}
+table{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+table th{
+    text-transform: uppercase;
+    
+}
+table #totlshow{
+    color: blue;
+    
+}
+th,td{
+    padding: 5px;
+}

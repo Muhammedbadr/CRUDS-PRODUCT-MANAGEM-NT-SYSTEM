@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sayle.css">
+</head>
+<body>
+    <div class="card">
+        <!-- ######## -->
+        <div class="header">
+            <h1 id="title1">CRUDS </h1>
+            <p>PRODUCT MANAGEM NT SYSTEM</p>
+        </div>
+        <!-- ########## -->
+        <div class="input">
+            <input type="text" placeholder="title" id="titleinput">
+            <div class="price">
+                <input onkeyup="getTotle()" type="number" placeholder="price" style="color: rgb(73, 105, 246);" id="price">
+                <input onkeyup="getTotle()" type="number" placeholder="taxes" id="taxes">
+                <input onkeyup="getTotle()" type="number" placeholder="ads" id="ads">
+                <input onkeyup="getTotle()" type="number" placeholder="discount" id="discount">
+                <small onkeyup="getTotle()" id="totl"></small>
+            </div>
+            <input type="number" placeholder="count" id="count">
+            <input type="text" placeholder="catgary" id="catgary">
+            <button id="submit" style="font-size: 25px;">Creat</button>
+        </div>
+                <!-- ########## -->
+        <div class="outputs">
+            <div class="searchbook">
+                <div class="btnSearch">
+                    <button onclick="getsearch(this.id)" id="searctitile" >search by title</button>
+                    <button onclick="getsearch(this.id)" id="searchCateg">search by Categry</button>
+                </div>
+                <input onkeyup="searchDate(this.value)" type="text" placeholder="Search by" id="Search" >
+                <div class="content"></div>
+                <button id="scrollDownBtn">Search</button>
+            </div>
+            <div id="deletAll">
+
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>tecxt</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>ctogry</th>
+                    <th style="color: #007bff ; font-weight: 1000;" >totol</th>
+                    <th style="color: #28a745; font-weight: 800;">update</th>
+                    <th style="color: #dc3545; font-weight: 800;">delet</th>
+                </tr>
+                <tbody id="tbodys">
+                
+                </tbody>
+                
+            </table>
+
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
